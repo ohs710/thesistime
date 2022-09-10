@@ -1,50 +1,64 @@
 *{
     margin:0;
-    padding:0;
+    padding:0; 
 }
-
-
-
-.container{
-    background-color: black;
-    opacity:0.1;
-    height:100vh;
-  
+.container {
+ background-color: rgb(254, 253, 253);
+  height: 100vh;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.container_1{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.container .watch {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.container_1 .watch{
-    width: 50%;
-    display:flex;
+.container .watch .date {
+  height: 100px;
+  width: 100px;
+  background-color: #282828;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.container .watch .time {
+  width: 400px;
+  height: 100px;
+  background-color: #282828;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.container .watch .dorn {
+  height: 100px;
+  width: 100px;
+  background-color: #282828;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.container .day {
+    width: 400px;
+    height: 40px;
+    background-color: beige;
+    display: flex;
     align-items: center;
-    justify-content: center;
-}
-.container_1 .watch .date{
-    height:100px;
-    width:100px;
-} 
+    justify-content: space-between;
+  }
 
-body{
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: 100vh; }
-    
- @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
